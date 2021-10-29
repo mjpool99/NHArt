@@ -1,4 +1,4 @@
-# nhart-optimized
+# nhart
 
 ## Project setup
 ```

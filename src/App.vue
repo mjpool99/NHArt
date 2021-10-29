@@ -1,30 +1,55 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <div class="content">
+    <transition name="fade" mode="out-in">
+    <Navbar v-if="this.$route.path !== '/'" />
+    </transition>
+    <ContactCard v-if="this.$route.path !== '/'" />
+      <router-view v-slot="{ Component, route }">
+        <transition
+          :enter-active-class="route.meta.enterClass"
+          :leave-active-class="route.meta.leaveClass"
+        >
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
+    </div>
 </template>
-
+<script>
+import ContactCard from "./components/ContactCard.vue";
+import Navbar from "./components/Navbar.vue";
+export default {
+  components: {
+    Navbar,
+    ContactCard,
+  },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+::-webkit-scrollbar{
+  display: none;
 }
 
-#nav {
-  padding: 30px;
+h1, h2, h3, p, a{
+  font-family: Shadows Into Light Two;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  margin: 0;
+  background-color: #a19981;
+  overflow-x: hidden;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.content {
+  height: 100%;
+}
+
+.page{
+  position: absolute;
+  width: 100%;
+}
+
+.page-content {
+  margin: 20px 0;  
+  width: 100%;
 }
 </style>
