@@ -76,7 +76,7 @@ svg .text {
   border: 2px solid #810000;
   border-radius: 4px;
   opacity: 0;
-  animation: button .5s linear 9s forwards;
+  animation: button .5s linear 7s forwards;
 }
 
 @keyframes button {
