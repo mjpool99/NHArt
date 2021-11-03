@@ -49,7 +49,7 @@ export default {
 svg .text {
   stroke-dasharray: 4200;
   stroke-dashoffset: 4200;
-  animation: animate 8s linear 1s forwards;
+  animation: animate 5s linear 1s forwards;
 }
 
 @keyframes animate {
