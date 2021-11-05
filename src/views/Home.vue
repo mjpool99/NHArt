@@ -76,7 +76,7 @@ svg .text {
   border: 2px solid #810000;
   border-radius: 4px;
   opacity: 0;
-  animation: button .5s linear 4s forwards;
+  animation: button .5s linear 5.15s forwards;
 }
 
 @keyframes button {
@@ -109,7 +109,7 @@ svg .text {
   }
 
   .button a {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .button a:hover {
