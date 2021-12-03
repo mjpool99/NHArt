@@ -61,15 +61,14 @@ export default {
 .work-slideshow {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .instafeed-img {
   object-fit: cover;
-  margin: 10px;
-  padding: 6px;
+  margin: 3px;
+  padding: 3px;
   background-color: #1b1717;
   height: 225px;
   width: 225px;

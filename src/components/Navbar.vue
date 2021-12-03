@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <div class="nav-left">
+  <nav class="animate__animated animate__slideInDown animate__faster animate__delay-1s">
+    <div class="nav-left animate__animated animate__jackInTheBox animate__delay-1s">
       <router-link to="/work" class="navItem">Gallery</router-link>
       <router-link to="/about" class="navItem">About</router-link>
     </div>
@@ -12,7 +12,7 @@
         <MobileNav />
       </ul>
     </div>
-    <div class="logo">
+    <div class="logo animate__animated animate__jackInTheBox animate__delay-1s">
       <svg
         width="414"
         height="80"
@@ -31,7 +31,7 @@
         />
       </svg>
     </div>
-    <div class="nav-right">
+    <div class="nav-right animate__animated animate__jackInTheBox animate__delay-1s">
       <router-link to="/shows" class="navItem">Shows</router-link>
       <a @click="openCard()" class="navItem">Contact</a>
     </div>

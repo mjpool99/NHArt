@@ -16,8 +16,8 @@ const routes = [
     name: 'About',
     component: () => import('../views/About.vue'),
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft"
+      enterClass: "animate__animated animate__fadeIn animate__delay-2s",
+      leaveClass: "animate__animated animate__fadeOut"
     }
   },
   {
@@ -25,8 +25,8 @@ const routes = [
     name: 'Work',
     component: () => import('../views/Work.vue'),
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft"
+      enterClass: "animate__animated animate__fadeIn animate__delay-2s",
+      leaveClass: "animate__animated animate__fadeOut"
     }
   },
   {
@@ -34,8 +34,8 @@ const routes = [
     name: 'Shows',
     component: () => import('../views/Shows.vue'),
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft"
+      enterClass: "animate__animated animate__fadeIn animate__delay-2s",
+      leaveClass: "animate__animated animate__fadeOut"
     }
   },
   {
@@ -43,8 +43,8 @@ const routes = [
     name: 'AdminLogin',
     component: () => import('../views/AdminLogin.vue'),
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft"
+      enterClass: "animate__animated animate__fadeIn animate__delay-2s",
+      leaveClass: "animate__animated animate__fadeOut"
     }
   },
   {
@@ -52,8 +52,8 @@ const routes = [
     name: 'Admin',
     component: () => import('../views/Admin.vue'),
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft"
+      enterClass: "animate__animated animate__fadeIn animate__delay-2s",
+      leaveClass: "animate__animated animate__fadeOut"
     }
   }
 ]
