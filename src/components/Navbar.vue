@@ -47,13 +47,10 @@ export default {
   methods: {
     openNav() {
       let menu = document.querySelector(".mobile-nav");
-      let list = document.querySelector(".list-links");
-      if (list.style.display === "grid") {
+      if (menu.style.height === "100%") {
         menu.style.height = "0";
-        list.style.display = "none";
       } else {
         menu.style.height = "100%";
-        list.style.display = "grid";
       }
     },
     openCard() {
@@ -165,7 +162,8 @@ export default {
     text-align: center;
     list-style: none;
     padding: 20px 0;
-    display: none;
+    overflow: hidden;
+    display: grid;
     height: 100%;
     grid-template-rows: 20% 20% 20% 20%;
   }
@@ -204,6 +202,7 @@ export default {
     font-size: clamp(1.2rem, 6vw, 1.75rem);
     position: absolute;
     left: 20px;
+    z-index: 6;
   }
 }
 </style>
