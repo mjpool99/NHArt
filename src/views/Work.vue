@@ -3,7 +3,7 @@
     <div class="work page-content">
       <div class="work-slideshow">
         <div class="instafeed">
-          <div v-for="img in img" :key="img" class="span">
+          <div v-for="img in img" :key="img" class="span animate__animated animate__fadeIn">
             <a :href="img.media_url">
               <img class="instafeed-img" :src="img.media_url"
             /></a>
@@ -104,6 +104,82 @@ export default {
   to {
     opacity: 1;
   }
+}
+
+.span:nth-of-type(1){
+  animation-delay: .1s;
+}
+.span:nth-of-type(2){
+  animation-delay: .2s;
+}
+.span:nth-of-type(3){
+  animation-delay: .3s;
+}
+.span:nth-of-type(4){
+  animation-delay: .4s;
+}
+.span:nth-of-type(5){
+  animation-delay: .5s;
+}
+.span:nth-of-type(6){
+  animation-delay: .6s;
+}
+.span:nth-of-type(7){
+  animation-delay: .7s;
+}
+.span:nth-of-type(8){
+  animation-delay: .8s;
+}
+.span:nth-of-type(9){
+  animation-delay: .9s;
+}
+.span:nth-of-type(10){
+  animation-delay: 1s;
+}
+.span:nth-of-type(11){
+  animation-delay: 1.1s;
+}
+.span:nth-of-type(12){
+  animation-delay: 1.2s;
+}
+.span:nth-of-type(13){
+  animation-delay: 1.3s;
+}
+.span:nth-of-type(14){
+  animation-delay: 1.4s;
+}
+.span:nth-of-type(15){
+  animation-delay: 1.5s;
+}
+.span:nth-of-type(16){
+  animation-delay: 1.6s;
+}
+.span:nth-of-type(17){
+  animation-delay: 1.7s;
+}
+.span:nth-of-type(18){
+  animation-delay: 1.8s;
+}
+.span:nth-of-type(19){
+  animation-delay: 1.9s;
+}
+.span:nth-of-type(20){
+  animation-delay: 2s;
+}
+.span:nth-of-type(21){
+  animation-delay: 2.1s;
+}
+.span:nth-of-type(22){
+  animation-delay: 2.2s;
+}
+.span:nth-of-type(23){
+  animation-delay: 2.3s;
+}
+.span:nth-of-type(24){
+  animation-delay: 2.4s;
+}
+.span:nth-of-type(25){
+  animation-delay: 2.5s;
 }
 
 @media (max-width: 900px) {

@@ -23,24 +23,26 @@ export default {
   methods: {
     openCard() {
       let menu = document.querySelector(".mobile-nav");
-      let list = document.querySelector(".list-links");
       let card = document.querySelector(".contact-card");
+      let button = document.querySelector(".navBtn");
       if (card.style.display === "flex") {
         card.style.display = "none";
       } else {
         card.style.display = "flex";
       }
-      if (list.style.display === "grid") {
+      if (menu.style.height === "200%") {
         menu.style.height = "0";
-        list.style.display = "none";
+                              button.classList.remove("fa-times");
+        button.classList.add("fa-bars");
       }
     },
 
     closeNav() {
       let menu = document.querySelector(".mobile-nav");
-      let list = document.querySelector(".list-links");
+      let button = document.querySelector(".navBtn");
       menu.style.height = "0";
-      list.style.display = "none";
+                      button.classList.remove("fa-times");
+        button.classList.add("fa-bars");
     },
   },
 };

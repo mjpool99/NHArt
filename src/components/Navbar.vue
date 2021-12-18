@@ -47,24 +47,30 @@ export default {
   methods: {
     openNav() {
       let menu = document.querySelector(".mobile-nav");
-      if (menu.style.height === "100%") {
+      let button = document.querySelector(".navBtn");
+      if (menu.style.height === "200%") {
         menu.style.height = "0";
+        button.classList.remove("fa-times");
+        button.classList.add("fa-bars");
       } else {
-        menu.style.height = "100%";
+        menu.style.height = "200%";
+                button.classList.add("fa-times");
+        button.classList.remove("fa-bars");
       }
     },
     openCard() {
       let menu = document.querySelector(".mobile-nav");
-      let list = document.querySelector(".list-links");
+      let button = document.querySelector(".navBtn");
       let card = document.querySelector(".contact-card");
       if (card.style.display === "flex") {
         card.style.display = "none";
       } else {
         card.style.display = "flex";
       }
-      if (list.style.display === "grid") {
+      if (menu.style.height === "200%") {
         menu.style.height = "0";
-        list.style.display = "none";
+                button.classList.remove("fa-times");
+        button.classList.add("fa-bars");
       }
     },
   },
@@ -162,15 +168,13 @@ export default {
     text-align: center;
     list-style: none;
     padding: 20px 0;
-    overflow: hidden;
-    display: grid;
-    height: 100%;
     grid-template-rows: 20% 20% 20% 20%;
   }
 
   .mobile-nav {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     position: fixed;
     top: 120px;
     left: 0;
